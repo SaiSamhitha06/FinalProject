@@ -1,0 +1,63 @@
+[
+    {
+        "fullname": "Sai Samhitha Nadipena",
+        "email": "saisamhithanadipena@gmail.com",
+        "password": "Samhitha@2003"
+    },
+    {
+        "fullname": "Sai Samhitha Nadipena",
+        "email": "sai@gmail.com",
+        "password": "Sai"
+    },
+    {
+        "fullname": "Rajesh Kumar",
+        "email": "rajesh1@gmail.com",
+        "password": "Rajesh@123"
+    },
+    {
+        "fullname": "Anita Sharma",
+        "email": "anita2@gmail.com",
+        "password": "Anita@456"
+    },
+    {
+        "fullname": "Vikram Singh",
+        "email": "vikram3@gmail.com",
+        "password": "Vikram@789"
+    },
+    {
+        "fullname": "Priya Reddy",
+        "email": "priya4@gmail.com",
+        "password": "Priya@101"
+    },
+    {
+        "fullname": "Manoj Verma",
+        "email": "manoj5@gmail.com",
+        "password": "Manoj@112"
+    },
+    {
+        "fullname": "Sunita Patel",
+        "email": "sunita6@gmail.com",
+        "password": "Sunita@131"
+    },
+    {
+        "fullname": "Arun Kumar",
+        "email": "arun7@gmail.com",
+        "password": "Arun@415"
+    },
+    {
+        "fullname": "Meera Iyer",
+        "email": "meera8@gmail.com",
+        "password": "Meera@161"
+    },
+    {
+        "fullname": "Deepak Joshi",
+        "email": "deepak9@gmail.com",
+        "password": "Deepak@718"
+    },
+    {
+        "fullname": "Seema Gupta",
+        "email": "seema10@gmail.com",
+        "password": "Seema@920"
+    }
+    
+]

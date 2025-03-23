@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        /* General Styling */
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side: Chatbot -->
+        <div class="chat-container">
+            <h2>Classroom Chatbot 🎙️</h2>
+            
+            <!-- Bot Avatar -->
+            <div class="bot-avatar">
+                <img id="botImage" src="/static/bot_idle.png" alt="Chatbot">
+            </div>
+
+            <div id="chatbox"></div>
+            <input type="text" id="userInput" placeholder="Type or speak..." />
+            <div class="button-container">
+                <button onclick="sendMessage()">Send</button>
+                <button onclick="startListening()">🎤 Speak</button> <!-- Voice Input -->
+            </div>
+        </div>
+
+        <!-- Right Side: Faculty Section -->
+        <div class="faculty-section">
+            <button id="facultyBtn" class="faculty-toggle-btn">Faculty</button>
+            <div class="upload-links hidden" id="facultyLinks">
+                <button onclick="location.href='/login_page'">Login</button>
+
+                
+               
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+    
+    
+</body>
+</html>
+

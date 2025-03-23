@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Upload Survey</title>
+</head>
+<body>
+    <h2>Upload Survey Link</h2>
+    <form action="http://127.0.0.1:5000/upload_survey" method="POST">
+        <label>Teacher Email:</label>
+        <input type="email" name="teacher_email" required><br><br>
+        
+        <label>Class:</label>
+        <input type="text" name="class_name" required placeholder="Enter class name"><br><br>
+        
+        <label>Section:</label>
+        <input type="text" name="section" required placeholder="Enter section"><br><br>
+        
+        <label>Survey Link:</label>
+        <input type="url" name="survey_link" required><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

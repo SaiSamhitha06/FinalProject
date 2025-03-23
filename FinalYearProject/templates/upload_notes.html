@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Notes</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        form { display: inline-block; text-align: left; background: #f9f9f9; padding: 20px; border-radius: 8px; }
+        input, select, button { margin: 10px 0; width: 100%; padding: 10px; }
+        button { background: blue; color: white; border: none; cursor: pointer; }
+        button:hover { background: darkblue; }
+    </style>
+</head>
+<body>
+
+    <h2>Upload Notes</h2>
+    <form id="uploadForm">
+        <label>Subject:</label>
+        <input type="text" id="subject" required>
+
+        <label>Date:</label>
+        <input type="date" id="date" required>
+
+        <label>Google Drive Link:</label>
+        <input type="text" id="driveLink" required>
+
+        <button type="submit">Upload</button>
+    </form>
+
+    <p id="responseMsg"></p>
+
+    <script>
+        document.getElementById("uploadForm").addEventListener("submit", function(event) {
+            event.preventDefault();  // Prevent page reload
+            
+            let subject = document.getElementById("subject").value;
+            let date = document.getElementById("date").value;
+            let driveLink = document.getElementById("driveLink").value;
+    
+            // Change the endpoint to '/upload_notes'
+            fetch("http://127.0.0.1:5000/upload_notes", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: `subject=${subject}&date=${date}&drive_link=${driveLink}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("responseMsg").innerText = data.message;
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+        });
+    </script>
+    
+
+    
+
+</body>
+</html>
