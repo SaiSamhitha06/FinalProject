@@ -39,7 +39,7 @@
             let driveLink = document.getElementById("driveLink").value;
     
             // Change the endpoint to '/upload_notes'
-            fetch("http://127.0.0.1:5000/upload_notes", {
+            fetch("https://finalproject-6dtp.onrender.com/upload_notes", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: `subject=${subject}&date=${date}&drive_link=${driveLink}`
